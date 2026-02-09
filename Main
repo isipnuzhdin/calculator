@@ -1,0 +1,63 @@
+def calculator():
+    print("Добро пожаловать в калькулятор!")
+    
+    # Ввод двух чисел
+    num1 = float(input("Введите первое число: "))
+    num2 = float(input("Введите второе число: "))
+    
+    # Выбор операции
+    operation = input("Выберите операцию (+, -, *, /, //, %, **, ==, !=, >, <, >=, <=): ")
+    
+    if operation == '+':
+        result = num1 + num2
+        print(f"Результат: {result}")
+    elif operation == '-':
+        result = num1 - num2
+        print(f"Результат: {result}")
+    elif operation == '*':
+        result = num1 * num2
+        print(f"Результат: {result}")
+    elif operation == '/':
+        if num2 != 0:
+            result = num1 / num2
+            print(f"Результат: {result}")
+        else:
+            print("Ошибка: Деление на ноль!")
+    elif operation == '//':
+        if num2 != 0:
+            result = num1 // num2
+            print(f"Результат: {result}")
+        else:
+            print("Ошибка: Деление на ноль!")
+    elif operation == '%':
+        if num2 != 0:
+            result = num1 % num2
+            print(f"Результат: {result}")
+        else:
+            print("Ошибка: Деление на ноль!")
+    elif operation == '**':
+        result = num1 ** num2
+        print(f"Результат: {result}")
+    elif operation == '==':
+        result = num1 == num2
+        print(f"Результат: {result}")
+    elif operation == '!=':
+        result = num1 != num2
+        print(f"Результат: {result}")
+    elif operation == '>':
+        result = num1 > num2
+        print(f"Результат: {result}")
+    elif operation == '<':
+        result = num1 < num2
+        print(f"Результат: {result}")
+    elif operation == '>=':
+        result = num1 >= num2
+        print(f"Результат: {result}")
+    elif operation == '<=':
+        result = num1 <= num2
+        print(f"Результат: {result}")
+    else:
+        print("Ошибка: Неверная операция!")
+
+# Запуск калькулятора
+calculator()
